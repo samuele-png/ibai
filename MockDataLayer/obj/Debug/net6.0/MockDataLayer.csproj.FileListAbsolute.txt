@@ -1,0 +1,15 @@
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\bin\Debug\net6.0\MockDataLayer.deps.json
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\bin\Debug\net6.0\MockDataLayer.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\bin\Debug\net6.0\MockDataLayer.pdb
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\bin\Debug\net6.0\Domain Layer.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\bin\Debug\net6.0\Domain Layer.pdb
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\MockDataLayer.csproj.AssemblyReference.cache
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\MockDataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\MockDataLayer.AssemblyInfoInputs.cache
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\MockDataLayer.AssemblyInfo.cs
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\MockDataLayer.csproj.CoreCompileInputs.cache
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\MockDataLayer.csproj.CopyComplete
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\MockDataLayer.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\refint\MockDataLayer.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\MockDataLayer.pdb
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\MockDataLayer\obj\Debug\net6.0\ref\MockDataLayer.dll

@@ -1,0 +1,63 @@
+﻿@page
+@using Domain_Layer.Classes;
+@using Domain_Layer.ClassManagers;
+@using Domain_Layer.Enums;
+@using DataLayer;
+@model CreateStoreModel
+
+@{
+	StoreManager storeManager = new(new StoreData());
+	UserManager userManager = new(new UserData());
+	string userName = HttpContext.Session.GetString("_UserName");
+	List<User> userList = new();
+	User user = userManager.GetUserByUserName(new User(0,userName));
+	string[] catNames = Enum.GetNames(typeof(Categories));
+}
+
+@if (userName != null)
+{
+	Layout = "_LayoutLoggedIn";
+}
+else
+{
+	Layout = "_Layout";
+}
+
+@if (userName != null)
+{
+	@if (user.UserLevel == (int)UserLevels.SELLER || user.UserLevel == (int)UserLevels.PREMIUMSELLER || user.UserLevel == (int)UserLevels.ADMIN)
+	{
+		<div class="storeCreationBox"> 
+			<form method="post">
+				<label asp-for="NewStore.StoreName">Name:*</label>
+				<span asp-validation-for="NewStore.StoreName"></span>
+				<input asp-for="NewStore.StoreName" /><br />
+				<label asp-for="NewStore.Description">Description:*</label>
+				<span asp-validation-for="NewStore.Description"></span>
+				<input asp-for="NewStore.Description" /><br />
+				<select asp-for="NewStore.Categories">
+					@for (int i = 0; i < catNames.Count(); i++)
+					{
+						<option value="@catNames[i].TrimEnd(',')">@catNames[i]</option>
+					}
+					</select>
+					<span asp-validation-for="NewStore.Categories"></span>
+					<span asp-validation-for="NewStore.Owner">@user.UserId</span>
+					<div class="logReg_button_container">
+					<input type="submit" value="Submit"/>
+				</div>
+			</form>
+		</div>
+	}
+	else
+	{
+		<div class="storeCreationBox">
+			<p> Become a seller! Go to your profile and change your user level:</p>
+			<a href="/ProfilePage?name=@userName">Create your store</a>
+		</div>
+
+	}
+}
+else{
+	RedirectToPage("/Registration");
+}

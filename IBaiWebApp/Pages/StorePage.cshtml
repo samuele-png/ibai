@@ -1,0 +1,57 @@
+﻿
+@page
+@using Domain_Layer.Classes
+@using Domain_Layer.ClassManagers
+@using Domain_Layer.Enums
+@using DataLayer
+@model IBaiWebApp.Pages.StorePageModel
+@{
+    ProductManager productCatalogue = new ProductManager(new ProductData());
+    StoreManager storeManager = new StoreManager(new StoreData());
+    List<Product> prList = new List<Product>();
+    Store thisStore = storeManager.GetStores().Find(x => x.StoreId == (int)ViewData["StoreId"]);
+    try
+    {
+        prList = productCatalogue.GetProducts().FindAll(x=>x.Store.StoreId == (int)ViewData["StoreId"]);
+    }
+    catch (Exception ex) { }
+  
+}
+@if (HttpContext.Session.GetString("_UserName") != null)
+{
+    Layout = "_LayoutLoggedIn";
+}
+else
+{
+    Layout = "_Layout";
+}
+@if (thisStore.Owner.UserName == HttpContext.Session.GetString("_UserName"))
+{
+    <div>
+        <a asp-page="/ProductCreation" asp-route-storeID="@thisStore.StoreId">Show Details</a>
+
+    </div>
+}
+
+    <div class="modularItemBox">
+        @for (int i = 0; i < prList.Count(); i++)
+        {
+            var x = prList[i];
+                <div class="test">
+                    @for(int z = 0;z<prList.Count()/4;z++ ){
+                        <div class="ItemRow + @z">
+                            <div class="itemSquare">
+                                    <div class="namePricePicSection">
+                                        <div class="picSquare"><img class="itemPic" src="@x.PictureUrl" /></div>
+                                        @x.Name<br>
+                                        @x.Price$
+                                    </div><br>
+                                    <div class="descriptionSection">@x.Description<br></div>
+                                <button type ="button">Add to Cart</button>
+                            </div>
+                        </div>
+                }
+                </div>
+        }
+    </div>
+}

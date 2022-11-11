@@ -1,0 +1,36 @@
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\IBaiDesktop.exe
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\IBaiDesktop.deps.json
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\IBaiDesktop.runtimeconfig.json
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\IBaiDesktop.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\IBaiDesktop.pdb
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\Domain Layer.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\Domain Layer.pdb
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.csproj.AssemblyReference.cache
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiNewDesktop.MainForm.resources
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.csproj.GenerateResource.cache
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.AssemblyInfoInputs.cache
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.AssemblyInfo.cs
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.csproj.CoreCompileInputs.cache
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.csproj.CopyComplete
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\refint\IBaiDesktop.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.pdb
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\IBaiDesktop.genruntimeconfig.cache
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\obj\Debug\net6.0-windows\ref\IBaiDesktop.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\DataLayer.dll
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\DataLayer.pdb
+C:\Users\samue\Desktop\Fontys\Semester 2\IBaiNew\IBaiNew\bin\Debug\net6.0-windows\BCrypt.Net-Core.dll

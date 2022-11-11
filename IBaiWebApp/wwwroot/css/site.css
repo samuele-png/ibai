@@ -1,0 +1,176 @@
+﻿
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #263238;
+    font-family: Arial, Tahoma, Serif;
+}
+
+.baseContainer {
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginSquare {
+    background-color: #fde55f;
+    border-block: double black;
+    border-left: double black;
+    border-right: double black;
+    height: 500px;
+    width: 500px;
+}
+
+
+
+.registerSquare {
+    background-color: #fde55f;
+    border-block: double black;
+    border-left: double black;
+    border-right: double black;
+    height: 500px;
+    width: 500px;
+}
+
+.sidebar {
+    background-color: #a2a52d;
+    display: flex;
+    gap: 16px;
+    height: 1300px;
+    width: 20%;
+}
+
+nav {
+    background: #cfd8dc; /* 4 */
+    display: flex; /* 1 */
+    justify-content: space-between; /* 2 */
+    padding: 1rem 2rem; /* 3 */
+}
+
+    nav ul {
+        display: flex; /* 5 */
+        list-style: none; /* 6 */
+    }
+
+    nav li {
+        padding-left: 1rem; /* 7! */
+    }
+
+    nav a {
+        color: #0d47a1;
+        text-decoration: none;
+    }
+
+.modularItemBox {
+    padding-top: 30px;
+    padding-left: 450px;
+    justify-content: center;
+    height: 1000px;
+}
+
+.itemSquare {
+    height: 200px;
+    width: 200px;
+    background-color: #fde55f;
+    border-block: double black;
+    border-left: double black;
+    border-right: double black;
+    display: inline-flex;
+}
+
+.itemPic {
+    height: 90px;
+    width: 90px;
+}
+
+.namePricePicSection {
+    height: 50%
+}
+
+.descriptionSection {
+    height: 50%;
+}
+
+.test {
+    display: flex;
+}
+
+.ItemRow1 {
+    position: relative;
+    height: 200px;
+    display: inline-block;
+}
+
+.ItemRow2 {
+    position: relative;
+    height: 200px;
+    padding-bottom: 200px;
+    display: inline-block;
+}
+
+.ItemRow3 {
+    position: relative;
+    height: 200px;
+    display: inline-block;
+    padding-bottom: 200px;
+}
+.ItemRow4 {
+    position: relative;
+    height: 200px;
+    display: inline-block;
+    padding-bottom: 200px;
+}
+.ItemRow5 {
+    position: relative;
+    height: 200px;
+    display: inline-block;
+    padding-bottom: 200px;
+}
+.ItemRow6 {
+    position: relative;
+    height: 200px;
+    display: inline-block;
+    padding-bottom: 200px;
+}
+.ItemRow7 {
+    position: relative;
+    height: 200px;
+    display: inline-block;
+    padding-bottom: 200px;
+}
+.ItemRow8 {
+    position: relative;
+    height: 200px;
+    display: inline-block;
+    padding-bottom: 200px;
+}
+#logo {
+    height: 100px;
+    width: 100px;
+}
+
+#navSearchBar {
+    padding-left: 12%;
+}
+
+#searchBar {
+    text-align: center;
+    padding-top: 50px;
+}

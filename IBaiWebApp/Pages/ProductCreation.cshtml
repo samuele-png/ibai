@@ -1,0 +1,47 @@
+﻿@page
+@model IBaiWebApp.Pages.ProductCreationModel
+@using Domain_Layer.Enums;
+@using Domain_Layer.Classes;
+@{
+	int? storeId = Convert.ToInt32(ViewData["StoreId"]);
+}
+<div class="baseContainer">
+	<div class="registerSquare">
+		<form method="post">
+
+			<label asp-for="NewProduct.Name">Name:*</label>
+			<span asp-validation-for="NewProduct.Name"></span>
+			<input asp-for="NewProduct.Name" /><br />
+
+			<label asp-for="NewProduct.Description">Description:*</label>
+			<span asp-validation-for="NewProduct.Description"></span>
+			<input asp-for="NewProduct.Description" /><br />
+
+			<label asp-for="NewProduct.Price">Price:*</label>
+			<span asp-validation-for="NewProduct.Price"></span>
+			<input asp-for="NewProduct.Price" /><br />
+
+			<label asp-for="NewProduct.ShippingFee">ShippingFee:*</label>
+			<span asp-validation-for="NewProduct.ShippingFee"></span>
+			<input asp-for="NewProduct.ShippingFee" /><br />
+
+			<label asp-for="NewProduct.PictureUrl">PictureUrl:*</label>
+			<span asp-validation-for="NewProduct.PictureUrl"></span>
+			<input asp-for="NewProduct.PictureUrl" /><br />
+			<label asp-for="NewProduct.StoreId" readonly>StoreId:*</label>
+			<span asp-validation-for="NewProduct.StoreId" readonly></span>
+			<input asp-for="NewProduct.StoreId" value="@storeId" readonly /><br />
+			
+
+
+			<select asp-for="NewProduct.Categories" asp-items="Html.GetEnumSelectList<Categories>()">
+				<option value="">Choose a category</option>
+			</select>
+			<div class="logReg_button_container">
+				<input type="submit" value="Submit" />
+
+			</div>
+
+		</form>
+	</div>
+</div>

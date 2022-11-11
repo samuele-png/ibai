@@ -1,0 +1,25 @@
+﻿@page
+@model IBaiWebApp.Pages.ProductPageModel
+@using Domain_Layer.ClassManagers;
+@using DataLayer;
+@using Domain_Layer.Classes;
+@{
+	int productId = (int)ViewData["ID"];
+	ProductManager productManager = new ProductManager(new ProductData());
+	Product x = productManager.GetProduct(new Product(productId));
+	string userName = HttpContext.Session.GetString("_UserName");
+}
+@if (userName != null)
+{
+	Layout = "_LayoutLoggedIn";
+}
+else
+{
+	Layout = "_Layout";
+}
+<div>
+	@x.Name
+	@x.Price
+	@x.PictureUrl
+	@x.Description;
+</div>

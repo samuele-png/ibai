@@ -1,0 +1,43 @@
+﻿@page
+@model IBaiWebApp.Pages.ProfilePageModel
+@using Domain_Layer;
+@using Domain_Layer.Classes;
+@using Domain_Layer.ClassManagers;
+@using DataLayer;
+@using Domain_Layer.Enums;
+@{
+	StoreManager storeManager = new(new StoreData());
+	UserManager userManager = new(new UserData());
+	var userName = HttpContext.Session.GetString("_UserName");
+	List<User> userList = new();
+	User user = userManager.GetUserByUserName(new User(0, userName));
+	string[] userLevels = Enum.GetNames(typeof(UserLevels));
+}
+@if (userName != null)
+{
+	Layout = "_LayoutLoggedIn";
+}
+else
+{
+	Layout = "_Layout";
+}
+<div class="baseContainer">
+	Welcome @user.UserName, you can edit add or remove your infos here.<br />
+	Change your User Level:
+	<form class="form" method="post" asp-page-handler="SetUserLevel">
+		<a as
+	<select asp-for="User.UserLevel" >
+		@for (int i = 0; i < userLevels.Count(); i++)
+		{
+			<option value="@userLevels[i]">@userLevels[i]</option>
+		}
+	</select>
+		<input type="text" id="userName" name="name" />
+
+		<div class="logReg_button_container">
+			<input type="submit" value="Submit" />
+		</div>
+	</form>
+
+	
+</div>

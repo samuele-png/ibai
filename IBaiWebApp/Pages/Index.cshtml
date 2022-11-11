@@ -1,0 +1,47 @@
+﻿@page
+@using Domain_Layer.Classes
+@using Domain_Layer.ClassManagers
+@using Domain_Layer.Enums
+@using DataLayer
+@model IndexModel
+@{
+    ProductManager dataCatalogue = new ProductManager(new ProductData());
+    List<Product> prList = new List<Product>();
+    try
+    {
+       prList = dataCatalogue.GetProducts();
+    }
+    catch (ArgumentOutOfRangeException) { }
+}
+@if (HttpContext.Session.GetString("_UserName") != null)
+{
+    Layout = "_LayoutLoggedIn";
+}
+else
+{
+    Layout = "_Layout";
+}
+@{
+    //loops too many times, couldn't find a way to display properly.
+    <div class="modularItemBox">
+        @for (int i = 0; i < prList.Count(); i++)
+        {
+            var x = prList[i];
+                <div class="test">
+                    @for(int z = 0;z<prList.Count()/4;z++ ){
+                        <div class="ItemRow + @z">
+                            <div class="itemSquare">
+                                    <div class="namePricePicSection">
+                                        <div class="picSquare"><img class="itemPic" src="@x.PictureUrl" /></div>
+                                        @x.Name<br>
+                                        @x.Price$
+                                    </div><br>
+                                    <div class="descriptionSection">@x.Description<br></div>
+                            <a asp-page="/ProductPage" asp-route-productID="@x.ProductID">Show Details</a>
+                            </div>
+                        </div>
+                }
+                </div>
+        }
+    </div>
+}

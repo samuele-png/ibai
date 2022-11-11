@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+@using Domain_Layer.Classes;
+@using Domain_Layer.Enums;
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>@ViewData["Title"] - IBaiWebApp</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" asp-append-version="true"/>
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+	<link rel="stylesheet" href="~/IBaiWebApp.styles.css" asp-append-version="true"/>
+</head>
+
+<nav class="loggedOffNav">
+<img id="logo" src="~/media/logo.png"  />
+<div id="navSearchBar">
+		<label for="categories">Choose a category:</label>
+		<select name="categories" id="categories">
+			@foreach (Categories type in Categories.GetValues<Categories>())
+				{
+					<option value="@type">@type</option>
+				}
+				</select>
+	<form id="searchBar">
+		<input type="search" name="searchInput" placeholder="Search anything you want on IBai!" size="90" required>
+		</form>
+	</div>
+	<ul>
+		<li>
+			<a href="#">
+				<button type="button">
+					<a asp-page="/Login">Login</a>
+				</button>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<button type="button">
+					<a asp-page="/Registration">Register</a>
+	
+				</button>
+			</a>
+		</li>
+		
+	</ul>
+</nav>
+<body>
+<section class="sidebar">
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
+
+</section>
+@await RenderSectionAsync("Scripts", false)
+</body>
+</html>
